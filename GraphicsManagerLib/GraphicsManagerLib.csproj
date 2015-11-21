@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6586892D-7EEA-47E8-AE52-D8D25F68B4B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GraphicsManagerLib</RootNamespace>
+    <AssemblyName>GraphicsManagerLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GameGraphicsLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ExtrenalRefs\GameGraphicsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.4.0.459, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MonoGame.Framework.WindowsDX.3.4.0.459\lib\net40\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\AnimationAction\AnimationActionType.cs" />
+    <Compile Include="Actions\AnimationAction\DepthAction.cs" />
+    <Compile Include="Actions\AnimationAction\FrameAction.cs" />
+    <Compile Include="Actions\AnimationAction\FramesPerSecondAction.cs" />
+    <Compile Include="Actions\AnimationAction\IAnimationAction.cs" />
+    <Compile Include="Actions\AnimationAction\LoopAction.cs" />
+    <Compile Include="Actions\AnimationAction\RotationAction.cs" />
+    <Compile Include="Actions\AnimationAction\ScaleAction.cs" />
+    <Compile Include="Actions\AnimationAction\StatusAction.cs" />
+    <Compile Include="Actions\ColorAction.cs" />
+    <Compile Include="Actions\GraphicActionType.cs" />
+    <Compile Include="Actions\IGraphicAction.cs" />
+    <Compile Include="Actions\PositionActions\IPositionAction.cs" />
+    <Compile Include="Actions\PositionActions\PositionXAction.cs" />
+    <Compile Include="Actions\PositionActions\PositionYAction.cs" />
+    <Compile Include="Actions\ShapeActions\IShapeAction.cs" />
+    <Compile Include="Actions\ShapeActions\RectangleActions\IRectangleAction.cs" />
+    <Compile Include="Actions\ShapeActions\LineAction.cs" />
+    <Compile Include="Actions\ShapeActions\RectangleActions\RectangleHeightAction.cs" />
+    <Compile Include="Actions\ShapeActions\RectangleActions\RectangleWidthAction.cs" />
+    <Compile Include="Actions\StringAction.cs" />
+    <Compile Include="Conditions\AnimationConditions\AnimationConditionType.cs" />
+    <Compile Include="Conditions\AnimationConditions\DepthCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\FrameCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\FramesPerSecondCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\FrameHeightCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\Interfaces\IAnimationCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\FrameWidthCondition.cs" />
+    <Compile Include="Conditions\ColorCondition.cs" />
+    <Compile Include="Conditions\PositionConditions\IPositionCondition.cs" />
+    <Compile Include="GlobalEnums\PositionType.cs" />
+    <Compile Include="Conditions\PositionConditions\PositionYCondition.cs" />
+    <Compile Include="Conditions\ShapeCondition\IShapeCondition.cs" />
+    <Compile Include="Conditions\ShapeCondition\LineCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\LoopedCondition.cs" />
+    <Compile Include="Conditions\PositionConditions\PositionXCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\RotationCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\ScaleCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\StatusCondition.cs" />
+    <Compile Include="Conditions\GraphicConditionType.cs" />
+    <Compile Include="Conditions\IGraphicCondition.cs" />
+    <Compile Include="Conditions\ShapeCondition\RectangleConditions\RectangleHeightCondition.cs" />
+    <Compile Include="Conditions\ShapeCondition\RectangleConditions\RectangleWidthCondition.cs" />
+    <Compile Include="Conditions\ShapeCondition\RectangleConditions\IRectangleCondition.cs" />
+    <Compile Include="GlobalEnums\RectangleType.cs" />
+    <Compile Include="GlobalEnums\ShapeType.cs" />
+    <Compile Include="Conditions\StringCondition.cs" />
+    <Compile Include="GraphicsManager.cs" />
+    <Compile Include="Conditions\Operator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExtrenalRefs\GameGraphicsLib.dll" />
+    <Content Include="ExtrenalRefs\GameGraphicsLib.pdb" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
