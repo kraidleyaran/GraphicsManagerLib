@@ -1,7 +1,9 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 
 namespace GraphicsManagerLib.Conditions
 {
+    [Serializable]
     public class ColorCondition : IGraphicCondition
     {
         public string Name { get; set; }

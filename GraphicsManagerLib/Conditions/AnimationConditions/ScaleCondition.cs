@@ -1,7 +1,9 @@
-﻿using GraphicsManagerLib.Conditions.AnimationConditions.Interfaces;
+﻿using System;
+using GraphicsManagerLib.Conditions.AnimationConditions.Interfaces;
 
 namespace GraphicsManagerLib.Conditions.AnimationConditions
 {
+    [Serializable]
     public class ScaleCondition : IAnimationCondition
     {
         public string Name { get; set; }

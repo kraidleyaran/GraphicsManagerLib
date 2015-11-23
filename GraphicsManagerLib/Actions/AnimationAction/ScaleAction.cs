@@ -1,5 +1,8 @@
-﻿namespace GraphicsManagerLib.Actions.AnimationAction
+﻿using System;
+
+namespace GraphicsManagerLib.Actions.AnimationAction
 {
+    [Serializable]
     public class ScaleAction : IAnimationAction
     {
         public string Name { get; set; }

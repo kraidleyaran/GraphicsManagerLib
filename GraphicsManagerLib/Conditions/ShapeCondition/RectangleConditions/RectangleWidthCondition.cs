@@ -1,7 +1,9 @@
-﻿using GraphicsManagerLib.GlobalEnums;
+﻿using System;
+using GraphicsManagerLib.GlobalEnums;
 
 namespace GraphicsManagerLib.Conditions.ShapeCondition.RectangleConditions
 {
+    [Serializable]
     public class RectangleWidthCondition : IRectangleCondition
     {
         public string Name { get; set; }

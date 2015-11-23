@@ -24,6 +24,7 @@ using ShapeType = GraphicsManagerLib.GlobalEnums.ShapeType;
 
 namespace GraphicsManagerLib
 {
+    [Serializable]
     public class GraphicsManager
     {
         private Dictionary<string, IGraphicCondition> _conditions;
@@ -301,7 +302,6 @@ namespace GraphicsManagerLib
             _actions.Clear();
             _actions = new Dictionary<string, IGraphicAction>();
         }
-        #endregion
 
 
         public bool? ExecuteAction(string name)
@@ -311,27 +311,50 @@ namespace GraphicsManagerLib
         }
         private bool? ExecuteAction(IGraphicAction action)
         {
-            if (!GameGraphics.DoesDrawableExist(action.Drawable)) return false;
+            
             switch (action.GraphicActionType)
             {
                 case GraphicActionType.Animation:
+                    if (!GameGraphics.DoesDrawableExist(action.Drawable)) return false;
                     IAnimationAction animationAction = (IAnimationAction) action;
                     return ExecuteAnimationAction(animationAction);
                 case GraphicActionType.Shape:
+                    if (!GameGraphics.DoesDrawableExist(action.Drawable)) return false;
                     IShapeAction shapeAction = (IShapeAction) action;
                     return ExecuteShapeAction(shapeAction);
                 case GraphicActionType.String:
+                    if (!GameGraphics.DoesDrawableExist(action.Drawable)) return false;
                     StringAction stringAction = (StringAction) action;
                     return ExecuteStringAction(stringAction);
                 case GraphicActionType.Position:
+                    if (!GameGraphics.DoesDrawableExist(action.Drawable)) return false;
                     IPositionAction positionAction = (IPositionAction) action;
                     return ExecutePositionAction(positionAction);
                 case GraphicActionType.Color:
+                    if (!GameGraphics.DoesDrawableExist(action.Drawable)) return false;
                     ColorAction colorAction = (ColorAction) action;
-                    return ExecuteColorAction(colorAction);                    
+                    return ExecuteColorAction(colorAction);
+                case GraphicActionType.Add:
+                    if (GameGraphics.DoesDrawableExist(action.Drawable)) return false;
+                    AddAction addAction = (AddAction) action;
+                    return ExecuteAddAction(addAction);
+                case GraphicActionType.Remove:
+                    if (!GameGraphics.DoesDrawableExist(action.Drawable)) return false;
+                    RemoveAction removeAction = (RemoveAction) action;
+                    return ExecuteRemoveAction(removeAction);
                 default:
                     return null;
             }
+        }
+
+        private bool? ExecuteAddAction(AddAction action)
+        {
+            return GameGraphics.AddToDrawList(action.DrawParam);
+        }
+
+        private bool? ExecuteRemoveAction(RemoveAction action)
+        {
+            return GameGraphics.RemoveFromDrawList(action.Drawable);
         }
 
         private bool? ExecuteAnimationAction(IAnimationAction action)
@@ -465,5 +488,6 @@ namespace GraphicsManagerLib
             }
             return null;
         }
+        #endregion
     }
 }

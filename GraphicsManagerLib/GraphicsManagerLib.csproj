@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\AddAction.cs" />
     <Compile Include="Actions\AnimationAction\AnimationActionType.cs" />
     <Compile Include="Actions\AnimationAction\DepthAction.cs" />
     <Compile Include="Actions\AnimationAction\FrameAction.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Actions\PositionActions\IPositionAction.cs" />
     <Compile Include="Actions\PositionActions\PositionXAction.cs" />
     <Compile Include="Actions\PositionActions\PositionYAction.cs" />
+    <Compile Include="Actions\RemoveAction.cs" />
     <Compile Include="Actions\ShapeActions\IShapeAction.cs" />
     <Compile Include="Actions\ShapeActions\RectangleActions\IRectangleAction.cs" />
     <Compile Include="Actions\ShapeActions\LineAction.cs" />

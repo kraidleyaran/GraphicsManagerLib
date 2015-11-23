@@ -1,8 +1,10 @@
-﻿using GraphicsManagerLib.GlobalEnums;
+﻿using System;
+using GraphicsManagerLib.GlobalEnums;
 using Microsoft.Xna.Framework;
 
 namespace GraphicsManagerLib.Conditions.ShapeCondition
 {
+    [Serializable]
     public class LineCondition : IShapeCondition
     {
         public LineCondition()

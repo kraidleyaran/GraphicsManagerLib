@@ -1,7 +1,9 @@
-﻿using GraphicsManagerLib.GlobalEnums;
+﻿using System;
+using GraphicsManagerLib.GlobalEnums;
 
 namespace GraphicsManagerLib.Conditions.PositionConditions
 {
+    [Serializable]
     public class PositionXCondition : IPositionCondition
     {
         public string Name { get; set; }

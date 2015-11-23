@@ -1,7 +1,9 @@
-﻿using GraphicsManagerLib.GlobalEnums;
+﻿using System;
+using GraphicsManagerLib.GlobalEnums;
 
 namespace GraphicsManagerLib.Actions.PositionActions
 {
+    [Serializable]
     public class PositionXAction : IPositionAction
     {
         public string Name { get; set; }

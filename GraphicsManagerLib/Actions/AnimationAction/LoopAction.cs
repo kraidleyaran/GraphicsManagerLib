@@ -1,7 +1,10 @@
 ﻿
 
+using System;
+
 namespace GraphicsManagerLib.Actions.AnimationAction
 {
+    [Serializable]
     public class LoopAction : IAnimationAction
     {
         public string Name { get; set; }

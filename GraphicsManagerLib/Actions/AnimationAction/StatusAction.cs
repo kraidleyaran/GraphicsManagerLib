@@ -1,7 +1,9 @@
-﻿using GameGraphicsLib;
+﻿using System;
+using GameGraphicsLib;
 
 namespace GraphicsManagerLib.Actions.AnimationAction
 {
+    [Serializable]
     public class StatusAction : IAnimationAction
     {
         public string Name { get; set; }

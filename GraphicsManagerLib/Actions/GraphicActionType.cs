@@ -2,6 +2,6 @@
 {
     public enum GraphicActionType
     {
-        Animation, Shape, String, Position, Color
+        Animation, Shape, String, Position, Color,Add,Remove
     }
 }

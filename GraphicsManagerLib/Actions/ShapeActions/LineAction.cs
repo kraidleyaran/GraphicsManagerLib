@@ -1,7 +1,9 @@
-﻿using GraphicsManagerLib.GlobalEnums;
+﻿using System;
+using GraphicsManagerLib.GlobalEnums;
 
 namespace GraphicsManagerLib.Actions.ShapeActions
 {
+    [Serializable]
     public class LineAction :  IShapeAction
     {
         public string Name { get; set; }

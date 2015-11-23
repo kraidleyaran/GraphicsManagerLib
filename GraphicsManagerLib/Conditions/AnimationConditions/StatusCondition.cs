@@ -1,8 +1,10 @@
-﻿using GameGraphicsLib;
+﻿using System;
+using GameGraphicsLib;
 using GraphicsManagerLib.Conditions.AnimationConditions.Interfaces;
 
 namespace GraphicsManagerLib.Conditions.AnimationConditions
 {
+    [Serializable]
     public class StatusCondition : IAnimationCondition
     {
         public string Name { get; set; }

@@ -1,7 +1,9 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 
 namespace GraphicsManagerLib.Conditions
 {
+    [Serializable]
     public class StringCondition : IGraphicCondition
     {
         public StringCondition()

@@ -1,7 +1,9 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 
 namespace GraphicsManagerLib.Actions
 {
+    [Serializable]
     public class ColorAction : IGraphicAction
     {
         public string Name { get; set; }
