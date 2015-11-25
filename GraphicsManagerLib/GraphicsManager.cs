@@ -36,6 +36,13 @@ namespace GraphicsManagerLib
             _actions = new Dictionary<string, IGraphicAction>();
             GameGraphics = new GameGraphics(game);
         }
+
+        public GraphicsManager(GameGraphics gameGraphics)
+        {
+            _conditions = new Dictionary<string, IGraphicCondition>();
+            _actions = new Dictionary<string, IGraphicAction>();
+            GameGraphics = gameGraphics;
+        }
         #region Conditions
 
         public bool AddCondition(IGraphicCondition condition)
@@ -309,7 +316,7 @@ namespace GraphicsManagerLib
             if (!_actions.ContainsKey(name)) return false;
             return ExecuteAction(_actions[name]);
         }
-        private bool? ExecuteAction(IGraphicAction action)
+        public bool? ExecuteAction(IGraphicAction action)
         {
             
             switch (action.GraphicActionType)

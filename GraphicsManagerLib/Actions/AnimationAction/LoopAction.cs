@@ -10,7 +10,7 @@ namespace GraphicsManagerLib.Actions.AnimationAction
         public string Name { get; set; }
         public string Drawable { get; set; }
         public bool Value { get; set; }
-        public AnimationActionType AnimationActionType { get { return AnimationActionType.Depth; } }
+        public AnimationActionType AnimationActionType { get { return AnimationActionType.Loop; } }
         public GraphicActionType GraphicActionType { get { return GraphicActionType.Animation; } }   
     }
 }
