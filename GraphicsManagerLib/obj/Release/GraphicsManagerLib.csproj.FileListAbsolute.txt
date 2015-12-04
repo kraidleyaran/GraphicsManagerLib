@@ -1,3 +1,4 @@
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\obj\Release\GraphicsManagerLib.csprojResolveAssemblyReference.cache
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\bin\Release\GraphicsManagerLib.dll
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\bin\Release\GraphicsManagerLib.pdb
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\bin\Release\GameGraphicsLib.dll
@@ -13,6 +14,5 @@ C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsM
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\bin\Release\SharpDX.Direct3D9.dll
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\bin\Release\GameGraphicsLib.pdb
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\bin\Release\MonoGame.Framework.xml
-C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\obj\Release\GraphicsManagerLib.csprojResolveAssemblyReference.cache
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\obj\Release\GraphicsManagerLib.dll
 C:\Users\Alex\Documents\Visual Studio 2013\Projects\GraphicsManagerLib\GraphicsManagerLib\obj\Release\GraphicsManagerLib.pdb

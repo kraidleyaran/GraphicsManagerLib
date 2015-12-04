@@ -12,6 +12,6 @@ namespace GraphicsManagerLib.Actions.ShapeActions.RectangleActions
         public int Value { get; set; }
         public GraphicActionType GraphicActionType { get { return GraphicActionType.Shape; } }
         public ShapeType ShapeType { get { return ShapeType.Rectangle; } }
-        public RectangleType RectangleType { get { return RectangleType.Width; } } 
+        public RectangleType RectangleType { get { return RectangleType.Height; } } 
     }
 }

@@ -74,6 +74,7 @@
     <Compile Include="Conditions\AnimationConditions\AnimationConditionType.cs" />
     <Compile Include="Conditions\AnimationConditions\DepthCondition.cs" />
     <Compile Include="Conditions\AnimationConditions\FrameCondition.cs" />
+    <Compile Include="Conditions\AnimationConditions\FrameCountCondition.cs" />
     <Compile Include="Conditions\AnimationConditions\FramesPerSecondCondition.cs" />
     <Compile Include="Conditions\AnimationConditions\FrameHeightCondition.cs" />
     <Compile Include="Conditions\AnimationConditions\Interfaces\IAnimationCondition.cs" />

@@ -135,11 +135,11 @@ namespace GraphicsManagerLib
 
                 case AnimationConditionType.FrameHeight:
                     FrameHeightCondition heightCondition = (FrameHeightCondition) condition;
-                    return CompareFloatValues(animation.GetCurrentFrame().Height, heightCondition.Operator,heightCondition.CompareValue);
+                    return CompareFloatValues(animation.GetCurrentFrame().TextureSource.Height, heightCondition.Operator,heightCondition.CompareValue);
 
                 case AnimationConditionType.FrameWidth:
                     FrameWidthCondition widthCondition = (FrameWidthCondition) condition;
-                    return CompareFloatValues(animation.GetCurrentFrame().Width, widthCondition.Operator,widthCondition.CompareValue);
+                    return CompareFloatValues(animation.GetCurrentFrame().TextureSource.Width, widthCondition.Operator,widthCondition.CompareValue);
             }
             return null;
         }
